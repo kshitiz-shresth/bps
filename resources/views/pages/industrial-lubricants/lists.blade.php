@@ -45,7 +45,7 @@
                                                 <h4>{{ $item->title }} </h4>
                                                 
                                                 <div class='prd-btn'>
-                                                    <a href="{{ route('industrialLubricantsDetail',$item->slug) }}l" >Read More</a>
+                                                    <a href="{{ route('industrialLubricantsDetail',$item->slug) }}" >Read More</a>
                                                 </div>
                                             </div>
 

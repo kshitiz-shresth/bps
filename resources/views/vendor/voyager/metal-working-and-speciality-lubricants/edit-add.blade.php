@@ -82,7 +82,7 @@
                                                 $selectedVolume = json_decode($dataTypeContent->volumes) ?? [];
                                             @endphp
                                             @foreach ($volumes as $item)
-                                                <option value="{{ $item->id }}" {{ in_array($item->id,$selectedVolume) ? "selected" : "" }}>{{ $item->quantity }}</option>
+                                                <option value="{{ $item->id }}" {{ !$edit && $item->quantity=="210L" ? "selected" : "" }} {{ in_array($item->id,$selectedVolume) ? "selected" : "" }}>{{ $item->quantity }}</option>
                                             @endforeach
                                         </select>
                                     </div>

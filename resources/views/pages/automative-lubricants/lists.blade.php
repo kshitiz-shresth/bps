@@ -30,8 +30,8 @@
                     <div class="col-md-9">
                         <div class="pr-ls-wrap">
                             <div class="row">
-                                @foreach ($automativeLubricants as $category)
-                                    @foreach ($category->automativeLubricants() as $item)
+                                @foreach ($automativeLubricantsCategory as $category)
+                                    @foreach ($category->automativeLubricants as $item)
                                         <div class="col-md-4 checkshow"  data-id="g-multi" data-category="{{ $item->category->slug }}" >
                                             <div class="pr-ls-sing" >
                                                     <div class="pr-img-box">

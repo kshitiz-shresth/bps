@@ -19,7 +19,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a href="#">Our Products</a>
+                            <a href="/products">Our Products</a>
                             <ul class="sub-link">
                                 <li><a href="/automative-lubricants"><img src="/images/icons/car-black.svg" alt=""> <span>Automative Lubricants</span></a></li>
                                 <li><a href="/industrial-lubricants"><img src="/images/icons/factory-black.svg" alt=""> <span>Industrial Lubricants</span></a></li>

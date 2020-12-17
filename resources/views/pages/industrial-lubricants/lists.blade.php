@@ -11,7 +11,7 @@
     <section class="inner-page products-list">
         <div class="container">
             <div class="bread-crumbs">
-                <a href="index.html"><i class="fas fa-home" style="color: #008837;"></i></a> <span>/</span> <a href="products_list.html">Products</a> <span>/</span> <a href="#">IndustrialLubricant</a>
+                <a href="/"><i class="fas fa-home" style="color: #008837;"></i></a> <span>/</span> <a href="/products">Products</a> <span>/</span> <a href="{{ route('industrialLubricants') }}">IndustrialLubricant</a>
             </div>
 
             <div class="prds-list-wrap">

@@ -5,7 +5,7 @@
     $automativeLubricants = \App\AutomativeLubricant::orderBy('order')->get();
 @endphp
 
-@section('title','About Us')
+@section('title','Automative Lubricants')
 
 @section('body')
       <section class="inner-page products-list">

@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','Contact Us')
+@section('title','Our Products')
 
 @section('body')
     <section class="inner-page products-list">

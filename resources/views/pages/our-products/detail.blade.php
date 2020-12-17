@@ -6,7 +6,7 @@
     <section class="inner-page products-list">
         <div class="container">
             <div class="bread-crumbs">
-                <a href="/"><i class="fas fa-home" style="color: #008837;"></i></a> <span>/</span> <a href="/products">Products</a> <span>/</span><a href="{{ $topLink }}}">{{ $topName }}<span>/</span>{{ $detail->title }}</a>
+                <a href="/"><i class="fas fa-home" style="color: #008837;"></i></a> <span>/</span> <a href="/products">Products</a> <span>/</span><a href="{{ $topLink }}">{{ $topName }}<span>/</span>{{ $detail->title }}</a>
             </div>
 
             <div class="product-detail">

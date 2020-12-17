@@ -39,8 +39,12 @@ class PageController extends Controller
 
     public function automativeLubricantsDetail($slug){
         $detail = AutomativeLubricant::where('slug',$slug)->first();
+        $topName = "Automative Lubricants";
+        $topLink = route('automativeLubricants');
         return view('pages.our-products.detail', compact(
-            'detail'
+            'detail',
+            'topName',
+            'topLink'
         ));
     }
 
@@ -52,8 +56,12 @@ class PageController extends Controller
     public function industrialLubricantsDetail($slug)
     {
         $detail = IndustrialLubricant::where('slug', $slug)->first();
+        $topName = "Industrial Lubricants";
+        $topLink = route('industrialLubricants');
         return view('pages.our-products.detail', compact(
-            'detail'
+            'detail',
+            'topName',
+            'topLink'
         ));
     }
 
@@ -65,8 +73,12 @@ class PageController extends Controller
     public function metalWorkingAndSpecialityLubricantsDetail($slug)
     {
         $detail = MetalWorkingAndSpecialityLubricant::where('slug', $slug)->first();
+        $topName = "Metal Working & Seciality Lubricants";
+        $topLink = route('metalWorkingAndSpecialityLubricants');
         return view('pages.our-products.detail', compact(
-            'detail'
+            'detail',
+            'topName',
+            'topLink'
         ));
     }
 

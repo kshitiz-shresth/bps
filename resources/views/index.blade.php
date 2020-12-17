@@ -42,7 +42,7 @@
                                 which enables the company to cater to a wide spectrum of 
                                 Automotive and Industrial needs.</p>
                         
-                            <a href="about.html" class="hover-btn">Our Story</a>
+                            <a href="/about-us" class="hover-btn">Our Story</a>
 
                         </div>
 
@@ -66,7 +66,7 @@
                         <div class="prd-sing">
                             <img src="images/automative.png" alt="">
 
-                            <a href="automative_lubricants.html">
+                            <a href="/automative-lubricants">
                                 <div class="ps-name">
                                     Automative <span>Lubricants</span>
                                 </div>
@@ -82,7 +82,7 @@
                         <div class="prd-sing">
                             <img src="images/industrial.png" alt="">
                             
-                            <a href="industrial_lubricants.html">
+                            <a href="/industrial-lubricants">
                                 <div class="ps-name">
                                     Industrial <span> Lubricants</span>
                                 </div>
@@ -97,7 +97,7 @@
                     <div class="col-md-4">
                         <div class="prd-sing">
                             <img src="images/metal.png" alt="">
-                            <a href="metalandspeiality.html">
+                            <a href="/metal-working-and-speciality-lubricants">
                                 <div class="ps-name">
                                     Metal Working &<span> Speciality Lubricants</span>
                                 </div>

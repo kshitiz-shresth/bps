@@ -16,6 +16,7 @@ use App\AutomativeLubricant;
 use App\IndustrialLubricant;
 use App\Download;
 use App\DownloadCategory;
+use App\MetalWorkingAndSpecialityLubricant;
 use App\NewsArticle;
 use App\Popup;
 
@@ -51,6 +52,19 @@ class PageController extends Controller
     public function industrialLubricantsDetail($slug)
     {
         $detail = IndustrialLubricant::where('slug', $slug)->first();
+        return view('pages.our-products.detail', compact(
+            'detail'
+        ));
+    }
+
+    public function metalWorkingAndSpecialityLubricants()
+    {
+        return view('pages.metal-working-and-speciality-lubricants.lists');
+    }
+
+    public function metalWorkingAndSpecialityLubricantsDetail($slug)
+    {
+        $detail = MetalWorkingAndSpecialityLubricant::where('slug', $slug)->first();
         return view('pages.our-products.detail', compact(
             'detail'
         ));

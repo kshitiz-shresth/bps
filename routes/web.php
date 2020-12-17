@@ -35,6 +35,9 @@ Route::get('automative-lubricants/{slug}', [PageController::class, 'automativeLu
 Route::get('industrial-lubricants', [PageController::class, 'industrialLubricants'])->name('industrialLubricants');
 Route::get('industrial-lubricants/{slug}', [PageController::class, 'industrialLubricantsDetail'])->name('industrialLubricantsDetail');
 
+Route::get('metal-working-and-speciality-lubricants', [PageController::class, 'metalWorkingAndSpecialityLubricants'])->name('metalWorkingAndSpecialityLubricants');
+Route::get('metal-working-and-speciality-lubricants/{slug}', [PageController::class, 'metalWorkingAndSpecialityLubricantsDetail'])->name('metalWorkingAndSpecialityLubricantsDetail');
+
 // Route::get('automative-lubricants', [PageController::class, 'automativeLubricants'])->name('automativeLubricants');
 // Route::get('automative-lubricants/{slug}', [PageController::class, 'automativeLubricantsDetail'])->name('automativeLubricantsDetail');
 // static Page Controller

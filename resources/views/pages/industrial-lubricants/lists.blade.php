@@ -22,7 +22,7 @@
                                 <ul class="fil-nocat">
                                     <li><a href="{{ route('automativeLubricants') }}"><img src="images/icons/car-black.svg" alt=""> <span>Automative Lubricants</span></a></li>
                                     <li><a href="{{ route('industrialLubricants') }}"><img src="images/icons/factory-black.svg" alt=""> <span>Industrial Lubricants</span></a></li>
-                                    <li><a href="metalandspeiality.html"><img src="images/icons/metal-black.svg" alt=""> <span>Metal Working & Speciality Lubricants</span></a></li>
+                                    <li><a href="{{ route('metalWorkingAndSpecialityLubricants') }}"><img src="images/icons/metal-black.svg" alt=""> <span>Metal Working & Speciality Lubricants</span></a></li>
                                 </ul>
                                 
                     

@@ -2,7 +2,7 @@
 
 @php
     $automativeLubricantsCategory = \App\AutomativeLubricantsCategory::orderBy('order')->get();
-    $automativeLubricants = \App\AutomativeLubricant::orderBy('order')->get();
+    // $automativeLubricants = \App\AutomativeLubricant::orderBy('order')->get();
 @endphp
 
 @section('title','Automative Lubricants')
@@ -30,23 +30,26 @@
                     <div class="col-md-9">
                         <div class="pr-ls-wrap">
                             <div class="row">
-                                @foreach ($automativeLubricants as $item)
-                                <div class="col-md-4 checkshow"  data-id="g-multi" data-category="{{ $item->category->slug }}" >
-                                    <div class="pr-ls-sing" >
-                                            <div class="pr-img-box">
-                                                <img src="{{ Voyager::image($item->image) }}">
-                                            </div>
+                                @foreach ($automativeLubricants as $category)
+                                    @foreach ($category->automativeLubricants as $item)
+                                        <div class="col-md-4 checkshow"  data-id="g-multi" data-category="{{ $item->category->slug }}" >
+                                            <div class="pr-ls-sing" >
+                                                    <div class="pr-img-box">
+                                                        <img src="{{ Voyager::image($item->image) }}">
+                                                    </div>
 
-                                            <div class="prd-des-box">
-                                                <p>{{ $item->category->title }} </p>
-                                                <h4>{{ $item->title }} </h4>
-                                                
-                                                <div class='prd-btn'>
-                                                    <a href="{{ route('automativeLubricantsDetail',$item->slug) }}" >Read More</a>
-                                                </div>
+                                                    <div class="prd-des-box">
+                                                        <p>{{ $item->category->title }} </p>
+                                                        <h4>{{ $item->title }} </h4>
+                                                        
+                                                        <div class='prd-btn'>
+                                                            <a href="{{ route('automativeLubricantsDetail',$item->slug) }}" >Read More</a>
+                                                        </div>
+                                                    </div>
                                             </div>
-                                    </div>
-                                </div>  
+                                        </div> 
+                                    @endforeach
+
                                 @endforeach
                             </div>
                         </div>
